@@ -7,6 +7,6 @@
     "dependencies": {
         "meta": "^1.0.62",
         "meta-yarn": "^0.0.5",
-        "meta-bump": "^0.1.7"
+        "meta-bump": "^0.2.0"
     }
 }

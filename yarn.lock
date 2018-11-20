@@ -1314,10 +1314,10 @@ math-random@^1.0.1:
   resolved "https://registry.yarnpkg.com/math-random/-/math-random-1.0.1.tgz#8b3aac588b8a66e4975e3cdea67f7bb329601fac"
   integrity sha1-izqsWIuKZuSXXjzepn97sylgH6w=
 
-meta-bump@^0.1.7:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/meta-bump/-/meta-bump-0.1.9.tgz#1919642d353856d867563223fed07b4b453af0c2"
-  integrity sha512-whFQwrM74G4cCv6NMWzwNAQD5vKcU5NK6ITrwJmW30ssy0F71J1NVG7I615aZ27bgVaWU85JOe6u9VmEl7WnMw==
+meta-bump@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/meta-bump/-/meta-bump-0.2.0.tgz#0ad242df78429b9d65dbd9c29c45b7eac59b971b"
+  integrity sha512-9v+jp0Pc22+UYy1u91hqiZRodga57eLSddnZBwDlPGmdWvdE85dKtO87gLnhtEHCfYOH49vCpv9lmVd3GVYQvQ==
   dependencies:
     async "^2.1.4"
     chalk "^1.1.3"
