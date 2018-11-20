@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "shared-library": "git@github.com:karol-f/shared-library.git",
+    "consumer-library-1": "git@github.com:karol-f/consumer-library-1.git",
+    "consumer-library-2": "git@github.com:karol-f/consumer-library-2.git"
+  }
+}

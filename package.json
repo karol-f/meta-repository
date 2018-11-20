@@ -1,0 +1,12 @@
+{
+    "name": "meta-repository",
+    "private": true,
+    "scripts": {
+        "setup": "yarn meta-git update && yarn meta-git checkout develop && yarn meta-yarn install && yarn meta-yarn link --all"
+    },
+    "dependencies": {
+        "meta": "^1.0.62",
+        "meta-yarn": "^0.0.5",
+        "meta-bump": "^0.1.7"
+    }
+}
