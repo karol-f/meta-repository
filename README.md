@@ -9,14 +9,13 @@ For detailed explanation on how things work, checkout the [documentation](https:
 yarn install
 yarn setup // this will:
            // - execute 'yarn meta-git update' - to pull from Git all repositories defined in .meta file
-           // - execute 'yarn meta-git checkout develop' - to change all branches to develop (if repository has such branch)
            // - execute 'yarn meta-yarn install' to install all dependencies in subfolders
-           // - execute 'yarn meta-yarn link --all' to symlink necessary dependencies
+           // - execute 'yarn meta-yarn link --all' to symlink necessary dependencies (shared-library symlink in node_module of consumer projects)
 ```
 
 ## Pushing changes to shared library
 
-You will need this point only AFTER developement. The 'Getting started' instructions set everything up, so that you can develop shared library instantly. 
+You will need this point only AFTER developement. The 'Getting started' instructions set everything up, so that you can develop shared library instantly and changes will be visible in consumer projects. 
 
 But if you want to share the results and make it permament, push your changes in shared library to git, normal way, then execute: 
 
@@ -24,7 +23,15 @@ But if you want to share the results and make it permament, push your changes in
 yarn meta-bump-yarn shared-library
 ``` 
 
-This command will auto git-tag last commit and update correct tag version in package.json files of e.g. consumer-library.
+This command will auto git-tag last commit and update correct tag version in package.json files of all consumer libraries.
+
+Alternatively you can use 
+
+```js
+yarn release
+``` 
+
+in `shared-library` directory and then manually update package.json in consumer libraries
 
 ## Workflow
 
@@ -35,4 +42,7 @@ yarn meta-yarn link --all
 ```
 
 This command is auto executed after `yarn setup`, so you have to use `yarn meta-yarn link --all` (in root directory of meta-repository) only in case of symlink (e.g. `consumer-library/node_modules/shared-library`) overwrite.
-# shared-library
+
+## Sidenote
+
+You can change `yarn meta-bump-yarn` or `meta-yarn link` to npm versions like `yarn meta-bump-npm` or `meta-npm link`.

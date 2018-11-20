@@ -2,7 +2,7 @@
     "name": "meta-repository",
     "private": true,
     "scripts": {
-        "setup": "yarn meta-git update && yarn meta-git checkout develop && yarn meta-yarn install && yarn meta-yarn link --all"
+        "setup": "yarn meta-git update && yarn meta-yarn install && yarn meta-yarn link --all"
     },
     "dependencies": {
         "meta": "^1.0.62",
